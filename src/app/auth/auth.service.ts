@@ -29,7 +29,7 @@ export class AuthService {
         'Access-Control-Allow-Origin': '*'
       })
     };
-    this.http.get('https://api.vk.com/method/newsfeed.get?filters=post&access_token=bd8ab01819576ce7eb01893e80b25fe2dea1cfb920bcc6930e2ea938c4619e3fc693dbdf8e4a4807b80a2&v=5.52', httpOptions)
+    this.http.get('url', httpOptions)
       .subscribe(data => {console.log(data); console.log('ok')}, err => {console.log(err); console.log('notok');});
   }
 
